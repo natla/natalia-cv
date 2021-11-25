@@ -1,0 +1,518 @@
+/* General */
+body {
+  font: 400 16px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #555;
+}
+
+.grid {
+  max-width: 960px;
+  margin: 15px auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: 0 auto;
+}
+
+.table-like {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.full-col {
+  width: 100%;
+}
+
+.left-col {
+  width: 30%;
+  padding-right: 5em;
+}
+
+.right-col {
+  width: calc((100% - 30%) - 5em);
+  /* text-align: justify; */
+  border-left: 2px dashed #aaa;
+  border-image: linear-gradient(to bottom, #F8981C, rgba(159, 83, 21, 0.8)) 10;
+  padding-left: 1em;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0.5em;
+}
+
+li {
+  padding: 5px 0;
+}
+
+article ul li {
+  position: relative;
+  padding-left: 16px;
+  line-height: 1.4em;
+}
+
+article ul li:before {
+  display: inline-block;
+  content: "";
+  background: #da7e06;
+  width: 12px;
+  height: 4px;
+  position: absolute;
+  top: 8px;
+  left: -4px;
+  transform: rotate(-5deg);
+}
+
+article ul li:nth-of-type(2n+1):before {
+  transform: rotate(4deg);
+}
+
+a {
+  text-decoration: none;
+  color: #666756;
+}
+
+section a {
+  color: #666;
+}
+
+article a {
+  text-decoration: underline;
+  background-color: transparent;
+  color: #da7e06;
+}
+
+article a:hover, section a:hover {
+  padding: 0;
+  color: #fff;
+  background-color: #F8981C;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Font Awesome Icons */
+.fa {
+  color: #F8981C;
+}
+
+.fa-arrow-circle-right {
+  margin-left: -1.3em;
+  background-color: white;
+  width: 20%;
+  font-size: 20px;
+}
+
+.fa-envelope {
+  font-size: 17px;
+}
+
+.fa-phone-square {
+  font-size: 18px;
+}
+
+.fa-map-marker {
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.fa-home {
+  font-size: 20px;
+}
+
+/* Header */
+header {
+  margin-top: 45px;
+  padding-right: 3em;
+}
+
+.image-class {
+  width: 50%;
+}
+
+.img-backgr {
+  float: left;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, #F8981C 60%, #9f5315 100%);
+}
+
+#image {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.headings {
+  width: 50%;
+  color: #666756;
+  text-align: right;
+  text-transform: uppercase;
+  /*padding-top: 6em;*/
+}
+
+.headings h1 {
+  width: 470px;
+}
+
+@media screen and (max-width: 694px) {
+  .headings {
+    width: 100%;
+  }
+}
+
+h1, h4 {
+  margin: 0;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 3em;
+}
+
+h2 {
+  color: #BCBBBB;
+  text-transform: capitalize;
+  font-weight: normal;
+  font-size: 2em;
+  margin: 0 20px 20px 18px;
+}
+
+h3 {
+  color: #666756;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1em;
+  margin: 5px auto;
+  border-bottom: 2px solid #BCBBBB;
+  border-image: linear-gradient(to right, #F8981C, rgba(159, 83, 21, 0.8)) 1;
+}
+
+h4 {
+  font-weight: 300;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin: 0 auto 1em;
+}
+
+h4.colorful, h5.colorful {
+  font-weight: 400;
+  color: #F8981C;
+  /* display: inline-block; */
+  /* width: 80%; */
+}
+
+h4.strypes {
+  margin-bottom: 6px;
+}
+
+.second, h4.second {
+  color: #da7e06;
+}
+
+.third, h4.third {
+  color: #9f5315;
+}
+
+article h3, article h4 {
+  text-align: center;
+}
+
+hr {
+  border: 0;
+  height: 30px;
+  margin-left: 1em;
+  margin-right: 1em;
+  background-color: rgba(243, 140, 7, 0.8);
+}
+
+.contacts-info {
+  font-size: 0.85em;
+  /* padding-left: 3.5em; */
+}
+
+.contacts-info2 {
+  text-transform: uppercase;
+  font-size: 0.85em;
+}
+
+/* Main */
+.first {
+  padding-top: 1em;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.image-container img {
+  width: 95%;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.email a {
+  color: #F8981C;
+  font-weight: 400;
+}
+
+h5 {
+  color: #666756;
+  width: 50%;
+  margin: 0.2em 0;
+  font-weight: 600;
+  font-size: 1em;
+  text-align: left;
+  font-style: normal !important;
+}
+
+h5.address, i.address {
+  width: 25%;
+}
+
+span.address {
+  width: 75%;
+}
+
+h5.full-name, i.full-name {
+  width: 20%;
+}
+
+span.full-name {
+  width: 80%;
+}
+
+/*
+/
+/ Media Queries
+/
+*/
+/*
+/
+/ Typography
+/
+*/
+@media screen and (max-width: 882px) {
+  h1 {
+    font-size: 2.7em;
+  }
+}
+
+@media screen and (max-width: 801px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 758px) {
+  h3 {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 748px) {
+  h1 {
+    font-size: 2.3em;
+  }
+}
+
+@media screen and (max-width: 694px) {
+  h1 {
+    font-size: 2.1em;
+  }
+
+  h3 {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 641px) {
+  h1 {
+    font-size: 1.9em;
+  }
+}
+
+@media screen and (max-width: 588px) {
+  h1 {
+    font-size: 1.7em;
+  }
+}
+
+@media screen and (max-width: 534px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  body {
+    font-size: 15px;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 451px) {
+  h1 {
+    font-size: 1.3em;
+  }
+}
+
+/*
+/
+/ Positioning
+/
+*/
+@media screen and (max-width: 760px) {
+  .left-col {
+    padding-right: 3.8em;
+  }
+
+  .right-col {
+    width: calc((100% - 30%) - 3.8em);
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .contacts-info {
+    display: flex;
+  }
+
+  .contacts-info2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .left-col {
+    width: 100%;
+    padding-right: 2em;
+  }
+
+  .right-col {
+    width: 100%;
+    padding-right: 2em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contacts-info {
+    display: none;
+  }
+
+  .contacts-info2 {
+    display: flex;
+  }
+
+  .personal-info h5 {
+    display: initial;
+  }
+
+  .fa-male, .fa-birthday-cake {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 761px) {
+  .personal-info h5, .education-info h5 {
+    display: initial;
+  }
+
+  .fa-male, .fa-birthday-cake {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 760px) {
+  .personal-info h5, .education-info h5 {
+    display: none;
+  }
+
+  .personal-info span:last-of-type {
+    width: 100%;
+  }
+
+  .education-info span {
+    width: 100%;
+  }
+
+  .fa-male, .fa-birthday-cake {
+    display: initial;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 626px) {
+  span.address {
+    font-size: 15px;
+  }
+}
+
+.left-aligned {
+  width: 50%;
+  text-align: left;
+  padding-top: 5px;
+}
+
+.right-aligned {
+  width: 50%;
+  text-align: right;
+  padding-top: 5px;
+}
+
+.center-aligned {
+  width: 50%;
+  text-align: center;
+  padding-top: 5px;
+}
+
+p {
+  margin-top: 0;
+}
+
+.centered {
+  text-align: center;
+  font-style: italic;
+}
+
+span.important {
+  color: #da7e06;
+}
+
+/* Footer */
+footer {}
+
+.thanks p {
+  font-family: "Quentin", "Sofia", cursive;
+  font-size: 2em;
+  color: #da7e06;
+  padding: 20px;
+  text-align: center;
+}
+
+/*! Quentin custom font generated by Font Squirrel on Nov 18, 2018 */
+@font-face {
+  font-family: "Quentin";
+  src: url('../custom_fonts/quentin-webfont.woff') format('woff2'),
+    url('../custom_fonts/quentin-webfont.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
