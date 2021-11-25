@@ -24,38 +24,49 @@ body {
   margin-top: 2em;
 }
 
+.main-col {
+  width: 100%;
+  border-left: 2px dashed #aaa;
+  border-image: linear-gradient(to bottom, #F8981C, rgba(159, 83, 21, 0.8)) 10;
+  padding-left: 1em;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+}
+
 .full-col {
   width: 100%;
 }
 
 .left-col {
-  width: 30%;
-  padding-right: 5em;
+  width: 45%;
+  padding-right: 4em;
 }
 
 .right-col {
-  width: calc((100% - 30%) - 5em);
+  width: calc((100% - 45%) - 4em);
   /* text-align: justify; */
-  border-left: 2px dashed #aaa;
-  border-image: linear-gradient(to bottom, #F8981C, rgba(159, 83, 21, 0.8)) 10;
-  padding-left: 1em;
+  /* border-left: 2px dashed #aaa;
+  border-image: linear-gradient(to bottom, #F8981C, rgba(159, 83, 21, 0.8)) 10; */
+  /* padding-left: 1em; */
   box-sizing: border-box;
 }
 
 ul {
-  list-style-type: none;
+  /* list-style-type: none; */
   margin-bottom: 0;
   padding-left: 0.5em;
 }
 
 li {
-  padding: 5px 0;
+  padding: 5px 1em;
+  display: inline-block;
 }
 
 article ul li {
   position: relative;
   padding-left: 16px;
   line-height: 1.4em;
+  display: block;
 }
 
 article ul li:before {
@@ -138,7 +149,7 @@ header {
 }
 
 .image-class {
-  width: 50%;
+  width: 35%;
 }
 
 .img-backgr {
@@ -157,7 +168,7 @@ header {
 }
 
 .headings {
-  width: 50%;
+  width: 65%;
   color: #666756;
   text-align: right;
   text-transform: uppercase;
@@ -165,7 +176,8 @@ header {
 }
 
 .headings h1 {
-  width: 470px;
+  width: 100%;
+  text-align: right;
 }
 
 @media screen and (max-width: 694px) {
@@ -233,20 +245,14 @@ article h3, article h4 {
 
 hr {
   border: 0;
-  height: 30px;
-  margin-left: 1em;
-  margin-right: 1em;
+  height: 24px;
+  margin: 2em 1em 1em;
   background-color: rgba(243, 140, 7, 0.8);
 }
 
 .contacts-info {
   font-size: 0.85em;
   /* padding-left: 3.5em; */
-}
-
-.contacts-info2 {
-  text-transform: uppercase;
-  font-size: 0.85em;
 }
 
 /* Main */
@@ -267,6 +273,7 @@ hr {
 .email a {
   color: #F8981C;
   font-weight: 400;
+  /* text-transform: none; */
 }
 
 h5 {
@@ -285,6 +292,7 @@ h5.address, i.address {
 
 span.address {
   width: 75%;
+  /* text-transform: none; */
 }
 
 h5.full-name, i.full-name {
@@ -396,10 +404,6 @@ span.full-name {
   .contacts-info {
     display: flex;
   }
-
-  .contacts-info2 {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -416,10 +420,6 @@ span.full-name {
   }
 
   .contacts-info {
-    display: none;
-  }
-
-  .contacts-info2 {
     display: flex;
   }
 
