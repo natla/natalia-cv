@@ -273,7 +273,7 @@ hr {
 .email a {
   color: #F8981C;
   font-weight: 400;
-  /* text-transform: none; */
+  text-transform: none;
 }
 
 h5 {
@@ -292,7 +292,7 @@ h5.address, i.address {
 
 span.address {
   width: 75%;
-  /* text-transform: none; */
+  text-transform: none;
 }
 
 h5.full-name, i.full-name {
@@ -504,6 +504,7 @@ footer {}
   font-family: "Quentin", "Sofia", cursive;
   font-size: 2em;
   color: #da7e06;
+  margin-bottom: 5px;
   padding: 20px;
   text-align: center;
 }
