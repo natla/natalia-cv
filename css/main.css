@@ -92,6 +92,7 @@ a {
 
 section a {
   color: #666;
+  margin-right: 0.5rem;
 }
 
 article a {
@@ -138,8 +139,24 @@ img {
   padding-top: 5px;
 }
 
-.fa-home {
+.fa-home,
+.fa-github,
+.fa-linkedin,
+.fa-envelope {
   font-size: 20px;
+}
+
+a#github:hover,
+a#linkedin:hover,
+a#email:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a#github:hover .fa-github,
+a#linkedin:hover .fa-linkedin,
+a#email:hover .fa-envelope {
+  color: #9f5315;
 }
 
 /* Header */
@@ -291,7 +308,6 @@ h5.address, i.address {
 }
 
 span.address {
-  width: 75%;
   text-transform: none;
 }
 
@@ -393,6 +409,7 @@ span.full-name {
 @media screen and (max-width: 760px) {
   .left-col {
     padding-right: 3.8em;
+    width: calc((100% - 30%) - 3.8em);
   }
 
   .right-col {
@@ -473,7 +490,7 @@ span.full-name {
 }
 
 .right-aligned {
-  width: 50%;
+  width: 100%;
   text-align: right;
   padding-top: 5px;
 }

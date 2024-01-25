@@ -23,12 +23,24 @@
       </div>
       <div class="headings">
         <h1>Natalia Malkovska</h1>
-        <h3>Software developer / Web developer / Pythonista</h3>
+        <h3>
+          Software developer / Web developer / Pythonista
+        </h3>
         <section class="table-like contacts-info">
-          <i class="fa fa-envelope left-aligned" aria-hidden="true"></i>
-          <span class="email right-aligned"><a href="mailto:natalia.malkovska@gmail.com">natalia.malkovska@gmail.com</a></span>
-          <i class="fa fa-map-marker address left-aligned third" aria-hidden="true"></i>
-          <span class="address right-aligned">Sofia, Bulgaria</span>
+          <span class="right-aligned">
+            <a id="email" title="Email" href="mailto:natalia.malkovska@gmail.com">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </a>
+            <a id="github" title="GitHub" href="https://github.com/natla/" target="_blank">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/natla/" target="_blank">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </span>
+          <span class="address right-aligned">
+            Sofia, Bulgaria
+          </span>
         </section>
       </div>
     </header>
@@ -41,15 +53,56 @@
 
       <div class="main-col table-like">
         <article>
-          <!-- <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> -->
-          <!-- <h4 class="full-col colorful">ABOUT</h4> -->
           <p>&emsp;Hello, my name is Natalia, thanks for taking an interest in me! I am passionate about Python, web development and UX/UI design.
             <!-- and NLP (this last one I dabble in non-professionally so far).  -->
             I am a friendly person and an avid learner
             always striving to perfect her craft.
-            <!-- <br>&emsp;This resume is a work in progress, outlining my learning and evolving journey. -->
-            <!-- Check it online: <a href="https://natla.cf/">natla.cf</a> -->
           </p>
+
+          <div class="full-col first">
+            <i class="fa fa-arrow-circle-right second" aria-hidden="true"></i>
+            <h3 class="full-col">WORK EXPERIENCE @ PRINTT</h3>
+            <p class="centered">February 2022 - Present</p>
+          </div>
+
+          <div class="full-col first">
+            <h4 class="colorful">Full Stack Web Development (Python, Django, DRF, React, Redux, Typescript)</h4>
+          </div>
+          <p>Redesigned, refactored, and improved the <a href="https://printt.com/" target="_blank">Printt</a> web application, offering delivery, click-and-collect, and self-printing services to users in the UK and Bulgaria.
+          </p>
+          <p>&emsp;My focuses are:
+          <ul>
+            <li>The backend API written in Python, utilizing <span class="important">Django</span> and the <span class="important">Django Rest Framework</span>, with a <span class="important">PostgreSQL</span> database.</li>
+            <li>The frontend part of the application, developed with <span class="important">React</span>, <span class="important">Redux</span> and <span class="important">Typescript</span>.</li>
+            <li>DevOps responsibilities, including Docker containerization, GitHub Actions CI\CD, and AWS deployment.</li>
+          </ul>
+          <br />
+          <p>&emsp;Some key achievements:</p>
+          <ul>
+            <li>Played role in the company extension beyond the initial UK market by integrating <a href="https://www.office1.bg/" target="_blank">Office 1 Superstore</a> and their printing services with Printt.
+            <li>Developed <span class="important">automated systems</span> to replace manual tasks done by developers and support, reducing overhead. Examples: automating the CI/CD flow, enabling Google social login users to create regular accounts.</li>
+            <li>Implemented <span class="important">new features</span> to enrich user experience, such as A3 printing, a donation system, and support for guest users.</li>
+            <li>Enhanced <span class="important">API performance</span> through code optimizations, including significantly improving load times for Django queries.</li>
+            <li><span class="important">Database modelling:</span> Optimized database migrations by eliminating unused tables and resolving merge conflicts.</li>
+            <li>Added <span class="important">localization</span> to the web app, including translations in Bulgarian.</li>
+            <li>Configured lint checks using <span class="important">pylint</span> for testing and continuous integration.</li>
+            <li>Created comprehensive <span class="important">documentation</span> for the new API architecture.</li>
+
+            <div class="full-col first">
+              <h4 class="colorful second">DevOps experience (Docker, Amazon Web Services)</h4>
+            </div>
+            <ul>
+              <li><span class="important">Docker Containerization:</span> Migrated the API infrastructure from Ansible and Vagrant to using <span class="important">Docker</span>.</li>
+              <li><span class="important">AWS Migration:</span> Transitioned from Amazon EC2 servers to the <a href="https://aws.amazon.com/ecs/" target="_blank">Amazon Elastic Container Service</a> with serverless computing, which resulted in a substantial decrease in monthly service costs for the API.</li>
+              <li><span class="important">Message Queue:</span> Migrated from RabbitMQ to <a href="https://aws.amazon.com/sqs/" target="_blank">Amazon Simple Queue Service</a>.</li>
+              <li><span class="important">Logging and Monitoring:</span> Set up logging and monitoring for the API on <a href="https://aws.amazon.com/cloudwatch/" target="_blank">Amazon CloudWatch</a>.</li>
+              <li><span class="important">CI/CD Workflow:</span> Established a CI/CD flow for the API using <a href="https://github.com/features/actions" target="_blank">GitHub Actions</a>.</li>
+            </ul>
+
+            <div class="full-col first">
+              <h4 class="colorful third">Other: MVP Project (Django, Flask, FastAPI)</h4>
+            </div>
+            <p>Developed an MVP version of a Python package to track and analyze user sessions using three distinct Python frameworks (Django, Flask, and FastAPI).</p>
 
           <div class="full-col first">
             <i class="fa fa-arrow-circle-right second" aria-hidden="true"></i>
@@ -62,13 +115,10 @@
           </p>
 
           <div class="full-col first">
-            <h4 class="colorful">FULL STACK DEVELOPMENT (PYTHON, Backbone.js)</h4>
-            <!-- <h4 class="colorful">Python Software Developer</h4> -->
+            <h4 class="colorful">FULL STACK DEVELOPMENT (Python, Flask, Backbone.js)</h4>
           </div>
 
-          <p>&emsp;Redesigning and improving
-            <!-- in a team with a .NET developer and a DevOps engineer  -->
-            a messaging app for smart buildings.
+          <p>&emsp;Redesigning and improving a messaging app for smart buildings.
           </p>
           <p>&emsp;The app enables on-scene personnel to report accidents with rich geo-tagged media, voice, text, photo and/or video.
             <!-- Then appropriate personnel (e.g. maintenance / security / police authorities / fire dept. / etc.), receives notifications and can collaborate for more effective action.</p> -->
@@ -80,32 +130,26 @@
             <li>The frontend part of the application which is written in <span class="important">Backbone.js</span>, and provides a user-friendly interface for reporting accidents by exchanging messages and uploading files to better illustrate the
               reports.</li>
           </ul>
-
           <br />
-          <p>&emsp;My responsibilities are:</p>
-          <ul>
-            <li>Continuously implementing new features and improvements to the app;</li>
-            <li>Functional testing, support of the application and fixing bugs.</li>
-          </ul>
-          <br />
-          <p>&emsp;For example, I have:</p>
+          <p>&emsp;Some key achievements:</p>
           <ul>
             <li>Migrated the existing codebase of the media service from Python 2.7 to Python 3.7;</li>
             <li>Set up <span class="important">pylint</span> and <span class="important">flake8</span> checks for testing and continuous integration;</li>
             <li>Migrated the file storage from Citycloud to <a class="important" href="https://aws.amazon.com/s3/" target="_blank">AWS Simple Storage Service</a>;</li>
             <li>Migrated the video converting workflow from Amazon Elastic Transcoder to <a class="important" href="https://aws.amazon.com/s3/" target="_blank">AWS Elemental MediaConvert</a>;</li>
             <li>Upgraded the Ubuntu OS servers in the development and qa environments.</li>
-            <li>Provided the user with the option to take a real-time video recording and upload it to the web app.</li>
+            <li>Provided the users with the option to take a real-time video recording and upload it to the web app.</li>
             <li>Set up <a class="important" href="https://sentry.io/welcome/" target="_blank">Sentry</a> monitoring and error tracking for the frontend app.</li>
 
             <div class="full-col first">
-              <h4 class="colorful second">Frontend Web Development (React/Redux)</h4>
+              <h4 class="colorful second">Frontend Web Development (React, Redux)</h4>
             </div>
             <p>&emsp;Reworking multiple web applications, implementing new features according to the customers' requirements and in close collaboration with a UX/UI designer.
               The applications are:</p>
             <ul>
               <li>Main desk and room booking application;</li>
-              <li>Office Manager app enabling office administrators to book rooms on behalf of guests. The Office Manager app was entirely redesigned according to the client's requrements, by implementing
+              <li>Office Manager app enabling office administrators to book rooms on behalf of guests.<br />
+                Entirely redesigned the app to meet the client's requrements, implementing
                 <a href="https://www.telerik.com/kendo-react-ui/">KendoReact UI</a>.
               </li>
               <li>Internal admin tool that allows the management of buidings, rooms and desks available for booking, among other features.</li>
@@ -114,7 +158,7 @@
             <div class="full-col first">
               <h4 class="colorful third">Data Analytics (Power BI)</h4>
             </div>
-            <p>&emsp;Creating reports that analyze aand vizualize the room and desk utilization of our clients' offices around the world.</p>
+            <p>&emsp;Creating reports that analyze and vizualize the room and desk utilization of our clients' offices around the world.</p>
 
             <div class="full-col first">
               <i class="fa fa-arrow-circle-right third" aria-hidden="true"></i>
@@ -122,38 +166,38 @@
               <p class="centered">May 2019 - May 2020</p>
 
             </div>
-            <p>&emsp;G Adventures is an adventure travel company whose purpose is to improve lives through responsible and sustainable travel.
-              The G Adventures website is vast, spanning across 70+ web applications. I am managing and redesigning many of these, while working on numerous bigger and smaller projects.</p>
+            <p>&emsp;<a href="https://www.gadventures.com/" title="G Adventures" target="_blank">G Adventures</a> is an adventure travel company
+              dedicated to responsible and sustainable travel. Their website extends over 70 web applications.
+              In my role, I manage and redesign many of these applications, while working on various projects of different sizes.</p>
 
             <div class="full-col first">
               <h4 class="colorful">Full Stack Web Developer</h4>
             </div>
-            <p>&emsp;As part of the <em>Customer Systems</em> team in the Technology department, I am:</p>
+            <p>&emsp;My responsibilities are:</p>
             <ul>
-              <li> Writing software for the G Adventures marketing and ecommerce website
-                (<a href="https://www.gadventures.com/" title="G Adventures website" target="_blank">www.gadventures.com</a>) and Sherpa, a B2B travel agent portal.</li>
-              <li> Closely collaborating with business stakeholders and other teams (marketing, UX/UI designers, internal platforms and the <a href="https://developers.gadventures.com/" title="G Adventures API" target="_blank">G API</a> team) to
-                redesign the business logic of web applications.</li>
-              <li> Using Python, Django MVT, Django REST framework, as well as Javascript (jQuery, Backbone.js) to implement new features to the existing web applications.</li>
-              <li> Improving my business knowledge and thinking in terms of data-driven decision making, minimum viable products and scalability.</li>
+              <li> Writing software for the <a href="https://www.gadventures.com/" title="G Adventures" target="_blank">G Adventures</a> marketing and ecommerce website and Sherpa, their B2B travel agent portal.</li>
+              <li> Closely collaborating with business stakeholders and other teams
+              <li> Using <span class="important">Python, Django, Django REST framework</span>, as well as <span class="important">Javascript (jQuery, Backbone.js)</span> to implement new features to the existing web applications.</li>
+              <!-- (marketing, UX/UI designers, internal platforms and the <a href="https://developers.gadventures.com/" title="G Adventures API" target="_blank">G API</a> team)  -->
+              to redesign the business logic of web applications.</li>
+              <li> Improving my <span class="important">business knowledge</span> and thinking in terms of data-driven decision making, conversion rates and scalability.</li>
             </ul>
-            <p>&emsp;Some of the various projects I've been working on are, for example:</p>
+            <br />
+            <p>&emsp;Some key achievements:</p>
             <ul>
-              <li> Create Dynamic maps for custom trips.
-                Unlike regular trips which have a static itinerary, custom trips have user-defined itineraries that needed to be dynamically created.</li>
-              <li> Rework the UX and UI of the custom trip request process. We needed it to be more straightforward and user-friendlier, in order to improve conversions.</li>
-              <li> Implement a CMS for travel agent resources. This enabled non-technical teams (e.g. marketing) to create resources for travel agents easily on their own, without having to ask for technical support instead.</li>
-              <li> Improve the donation process for G Adventures non-profit foundation, <a href="https://www.planeterra.org/" title="Planeterra foundation" target="_blank">Planeterra</a>. Provide travellers with the option to donate a one-time custom
-                donation amount, instead of only the fixed dollar-a-day amount.</li>
-              <li> Implement different kinds of data collection and analytics through <a href="https://heap.io/" title="Heap" target="_blank">Heap</a>.</li>
-              <li> Add a referral program to the G Adventures website, so that fans promoting trips to their friends and followers can earn cash.</li>
-              <li> Implement a mobile-first, one-column layout for the trip booking checkout process.</li>
+              <li> Created <span class="important">Dynamic maps</span> for custom trips, allowing users to define their own itineraries, in contrast to static itineraries for regular trips.</li>
+              <li> Reworked the custom trip request process to enhance <span class="important">user experience</span> and provide a more user-friendly interface, ultimately aiming to boost conversion rates.</li>
+              <li> Implemented a <span class="important">content management system (CMS)</span> for travel agent resources, enabling non-technical teams, such as marketing, to independently create resources for travel agents without requiring technical support.</li>
+              <li> Improved the <span class="important">donation process</span> for the G Adventures non-profit foundation, <a href="https://www.planeterra.org/" title="Planeterra foundation" target="_blank">Planeterra</a>, by providing multiple donation options.</li>
+              <li> Implemented various <span class="important">data collection and analytics</span> solutions through <a href="https://heap.io/" title="Heap" target="_blank">Heap</a>.</li>
+              <li> Added a <span class="important">referral program</span> to the G Adventures website, enabling fans to promote trips to their friends and followers and earn cash.</li>
+              <li> Implemented a <span class="important">mobile-first</span>, one-column layout for the trip booking checkout process, optimizing the user experience for mobile users.</li>
             </ul>
-            <p>&emsp;Tools and platforms I've been using include:
-              <a href="https://www.dynamicyield.com/" title="Dynamic Yield" target="_blank">Dynamic Yield</a> (for A/B testing almost every new feature),
+            <p>&emsp;Tools and platforms I've used include:
+              <a href="https://www.dynamicyield.com/" title="Dynamic Yield" target="_blank">Dynamic Yield</a> (for A/B testing new features),
               <a href="https://heap.io/" title="Heap" target="_blank">Heap</a> (for tracking data),
               Tealium (for tag management and analytics),
-              <a href="https://www.getambassador.com/" title="Ambassador referral software" target="_blank">Ambassador</a> referral software and many others.
+              <a href="https://www.getambassador.com/" title="Ambassador referral software" target="_blank">Ambassador</a> referral software.
             </p>
 
             <div class="full-col first">
@@ -195,81 +239,81 @@
               <h4 class="colorful second strypes">Python Software Developer</h4>
               <p class="centered">October 2016 - May 2019</p>
             </div>
-            <p>&emsp;As a software developer, my primary Work is executing architecture improvement projects for the largest supplier of photolithography systems for the semiconductor industry in the world (<a title="ASML"
-                href="https://www.asml.com/asml/en/s427" target="_blank">ASML</a>). </p>
-            <p>&emsp;I take responsibility in the completion of a project from start to end:</p>
+            <p>&emsp;As a software developer, I specialize in executing architecture improvement projects for the world's largest supplier of photolithography systems in the semiconductor industry
+              (<a title="ASML" href="https://www.asml.com/en" target="_blank">ASML</a>).
+            </p>
+            <p>&emsp;I take responsibility for the entire project from start to completion:</p>
             <ul>
-              <li> Investigating customer requirements and prototyping;</li>
+              <li> Investigating customer requirements, creating prototypes to validate solutions;</li>
               <li> Coming up with a detailed design plan, estimating the amount of effort necessary to implement the project;</li>
               <li> Making design decisions;</li>
               <li> Writing technical documentation;</li>
-              <li> Implementing the code changes (in C/C++ and Python);</li>
-              <li> Defining and performing (automated and manual) testing;</li>
-              <li> Executing code and document reviews;</li>
-              <li> Delivering the code changes.</li>
+              <li> Implementing code changes (in C/C++ and Python);</li>
+              <li> Defining and executing automated and manual testing;</li>
+              <li> Conducting thorough code and document reviews;</li>
+              <li> Delivering the finalized code changes.</li>
             </ul>
-            <p>&emsp;The ongoing communication and collaboration with the stakeholders is a crucial part of each project.</p>
+            <p>&emsp;The ongoing communication and collaboration with stakeholders are crucial aspects of each project.</p>
 
         </article>
       </div>
 
       <div class="left-col">
         <section class="table-like">
-          <h3 class="full-col"><i class="fa fa-code" aria-hidden="true"> </i>&emsp;Main Skills</h3>
+          <h3 class="full-col"><i class="fa fa-code" aria-hidden="true"> </i>&emsp;Web-Dev Stack</h3>
           <ul>
-            <li class=""><strong>Python</strong>
-              (Django, Flask)
-            </li>
-            <li class="">Javascript
-              (React/Redux, Backbone.js, jQuery)
-            </li>
+            <li class="full-col"><strong>Python</strong></li>
+            <li class="full-col">Django ORM, Django Rest Framework</li>
+            <li class="full-col">Flask</li>
+            <li class="full-col">FastAPI</li>
+            <li class="full-col">Javascript</li>
+            <li class="full-col">React, Redux, Typescript, Backbone.js</li>
+            <li class="full-col">HTML5, Jade</li>
+            <li class="full-col">CSS3, Sass, Bootstrap</li>
           </ul>
           <!-- <p>C</p> -->
         </section>
 
         <section class="table-like">
-          <h3 class="full-col"><i class="fa fa-brain second" aria-hidden="true"></i>&emsp;Industry Knowledge</h3>
+          <h3 class="full-col"><i class="fa fa-brain second" aria-hidden="true"></i>&emsp;Other Industry Knowledge</h3>
           <ul>
-            <li class="full-col">Agile Software Development</li>
-            <li class="full-col">A/B Testing and Optimization</li>
+            <li class="full-col">Databases: PostgreSQL, SQLAlchemy</li>
             <li class="full-col">Object Oriented Programming</li>
-            <li class="full-col">Version Control</li>
             <li class="full-col">CI/CD</li>
+            <li class="full-col">A/B Testing and Optimization</li>
             <li class="full-col">Software Documentation</li>
-            <!-- <li class="full-col">PostgreSQL</li> -->
           </ul>
         </section>
-
+        <!--
         <section class="table-like">
-          <h3 class="full-col"><i class="fa fa-globe third" aria-hidden="true"></i>&emsp;WEB-DEV RELATED</h3>
-
-          <!-- <h4 class="colorful">Frameworks</h4> -->
+          <h3 class="full-col"><i class="fa fa-globe third" aria-hidden="true"></i>&emsp;Web-Dev Stack Technologies</h3>
           <ul>
             <li class="full-col">Django ORM, Django REST Framework</li>
             <li class="full-col">Flask, SQLAlchemy</li>
-            <li class="full-col">React/Redux</li>
+            <li class="full-col">FastAPI</li>
+            <li class="full-col">React, Redux, Typescript</li>
             <li class="full-col">HTML5, Jade</li>
             <li class="full-col">CSS3, SASS, Bootstrap</li>
           </ul>
-        </section>
+        </section> -->
       </div>
 
       <div class="right-col">
         <section class="table-like">
           <h3 class="full-col">
             <i class="fa fa-laptop" aria-hidden="true"></i>
-            &emsp;Other Software Experience
+            &emsp;Deployment Tools
           </h3>
           <ul>
-            <li class="full-col"><a href="https://www.ansible.com/" target="_blank">Ansible playbooks</a> (for automating tasks)</li>
-            <li class="full-col"><a href="https://www.vagrantup.com/" target="_blank">Vagrant</a> (together with <a href="https://www.virtualbox.org/">VirtualBox</a> for setting up virtual development environments)</li>
-            <li class="full-col"><a href="https://www.rabbitmq.com/" target="_blank">RabbitMQ</a> (message broker)</li>
-            <li class="full-col"><a href="https://www.nginx.com/" target="_blank">Nginx</a> web server</li>
+            <li class="full-col"><a href="https://www.docker.com/" target="_blank">Docker</a></li>
+            <li class="full-col"><a href="https://www.ansible.com/" target="_blank">Ansible playbooks</a></li>
+            <li class="full-col"><a href="https://www.vagrantup.com/" target="_blank">Vagrant</a> and <a href="https://www.virtualbox.org/">VirtualBox</a></li>
+            <li class="full-col"><a href="https://www.rabbitmq.com/" target="_blank">RabbitMQ</a></li>
+            <li class="full-col"><a href="https://www.nginx.com/" target="_blank">Nginx</a></li>
             <li class="full-col"><a href="https://aws.amazon.com/" target="_blank">AWS Cloud services</a></li>
-            <li class="full-col"><a href="https://sentry.io/welcome/" target="_blank">Sentry</a> (app monitoring)</li>
-            <li class="full-col"><a href="https://www.getambassador.com/" target="_blank">Ambassador</a> (referral tracking)</li>
-            <li class="full-col"><a href="https://www.telerik.com/kendo-react-ui/" target="_blank">KendoReact UI</a></li>
-            <li class="full-col"><a href="https://www.heroku.com/" target="_blank">Heroku platform</a> (Django apps deployment)</li>
+            <li class="full-col"><a href="https://sentry.io/welcome/" target="_blank">Sentry</a></li>
+            <!-- <li class="full-col"><a href="https://www.telerik.com/kendo-react-ui/" target="_blank">KendoReact UI</a></li> -->
+            <li class="full-col"><a href="https://www.heroku.com/" target="_blank">Heroku</a></li>
 
           </ul>
         </section>
@@ -277,32 +321,15 @@
         <section class="table-like">
           <h3 class="full-col colorful">
             <i class="fas fa-chart-bar second" aria-hidden="true"></i>
-            &emsp;Data analytics
+            &emsp;Analytics
           </h3>
           <ul>
-            <li class="full-col"><a href="https://powerbi.microsoft.com/en-us/" target="_blank">PowerBI</a> (for visualizing office space utilization)</li>
+            <li class="full-col"><a href="https://powerbi.microsoft.com/en-us/" target="_blank">PowerBI</a></li>
             <li class="full-col"><a href="https://www.dynamicyield.com/ab-testing/" target="_blank">Dynamic Yield</a> (A/B testing)</li>
-            <li class="full-col"><a href="https://heap.io/product/explore" target="_blank">Heap</a> (for capturing user data)</li>
+            <li class="full-col"><a href="https://heap.io/product/explore" target="_blank">Heap</a> (capturing user data)</li>
             <li class="full-col"><a href="https://tealium.com/" target="_blank">Tealium</a> (tag management)</li>
+            <li class="full-col"><a href="https://www.getambassador.com/" target="_blank">Ambassador</a> (referral tracking)</li>
           </ul>
-        </section>
-      </div>
-
-      <div class="full-col">
-        <section class="table-like">
-          <h3 class="full-col"><i class="fa fa-heart" aria-hidden="true"> </i>&emsp;Useful Personal Projects</h3>
-          <article>
-            <p></p>
-            <!-- <h4 class="colorful">Python Web Scraper</h4> -->
-            <p>&emsp;<a title="web scraper" href="https://python-job-offers.fly.dev/" target="_blank">Python job offers</a>: one-page app, scraping the jobs.bg website for Python
-              <!-- and machine learning  -->
-              related jobs.
-            Implemented with the <a title="Django" target="_blank" href="https://www.djangoproject.com/">Django</a> web framework, hosted on the <a title="Fly.io" target="_blank" href="https://www.fly.io/">Fly.io</a> cloud platform.</p>
-
-            <!-- <h4 class="colorful second">Book notes</h4> -->
-            <p>&emsp;<a title="book notes" href="https://natla.github.io/book-notes/" target="_blank">Book notes</a>: As an avid reader, I take a lot of notes and excerpts from books for inspiration and to jog my memory down the line. I thought, why not share them with others?
-              This slowly expanding collection of book notes can spark your curiosity.</p>
-          </article>
         </section>
       </div>
 
@@ -318,8 +345,6 @@
               <span class="centered">Sofia University</span><br />
               <span class="centered">2004-2006</span>
             </li>
-            <!-- <li>Psychology in Childhood and Adolescence – Diagnostics and Consultation</li> -->
-            <!-- <hr/> -->
             <li>
             <li>
               <h5 class="centered full-col colorful second strypes">Bachelor’s Degree: General Psychology </h5>
@@ -337,7 +362,7 @@
       <p><em>Thank you for your time! Have a bright day!</em></p>
     </div>
     <footer class="container">
-      <small>Natalia Malkovska <span class="date">2021</span></small>
+      <small>Natalia Malkovska <span class="date">2024</span></small>
     </footer>
 
     <script src="scripts/main.js"></script>
